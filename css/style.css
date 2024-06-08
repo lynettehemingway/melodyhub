@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray: #727980;
+    --green: #b7cfc9;
+    --dark: #a093a0;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* navbar */
+.navbar{
+    background: #fff;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar .main-menu ul{
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color:var(--gray);
+}
+
+.navbar ul li a i {
+    margin-right: 5px;
+}
+
+.navbar ul li:last-child{
+    margin-left: 10px;
+}
+
+/* hero */
+.hero {
+    margin-bottom: 50px;
+    border-style: dotted;
+    border-color: var(--dark);
+}
+
+.hero .container {
+    background:url('../images/bunnylogo.png') no-repeat;
+    background-size:contain;
+    background-position:center right;
+    height: 350px;
+}
+
+.hero .hero-content{
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+}
+/* utility classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* buttons */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--green);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--gray);
+    color: #fff;
+}
+
+.btn-dark{
+    background: var(--dark);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* text class */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
