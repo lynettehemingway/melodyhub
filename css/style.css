@@ -7,14 +7,14 @@
 :root {
     --gray: #727980;
     --green: #b7cfc9;
-    --dark: #a093a0;
+    --dark: #ece9e9;
 }
 
 body{
     font-family:'Outfit',sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    background: #fff;
+    background: var(--dark);
 }
 
 a{
@@ -67,9 +67,8 @@ img {
 
 /* hero */
 .hero {
-    margin-bottom: 50px;
     border-style: dotted;
-    border-color: var(--dark);
+    border-color: black;
 }
 
 .hero .container {
@@ -87,6 +86,110 @@ img {
     width: 70%;
     margin-bottom: 20px;
 }
+
+/* video */
+.video{
+    padding: 10px 0 40px;
+
+}
+
+.video-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview {
+    margin-bottom: 20px;
+}
+
+
+/* part2 */
+.part2 {
+    padding: 40px 0;
+    border-style: dotted;
+    border-color: black;
+}
+
+.part2 .part2-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.part2-grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 30px;
+}
+
+.part2 .card p:nth-child(2){
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* faq */
+.faq {
+    padding: 40px 0;
+}
+
+.faq .faq-group {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq .faq-group .faq-group-header i{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+    display: none;
+}
+
+.faq .faq-group .faq-group-body.open{
+    display: block;
+}
+
+.faq ul.faq-menu {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dcdadb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor:pointer;
+    color: black;
+}
+
+.faq ul.faq-menu li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+    background: var(--green);
+    color:white;
+}
+
+
 /* utility classes */
 .container {
     max-width: 1100px;
@@ -172,4 +275,38 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+/* background */
+.bg-primary{
+    background: var(--green);
+    color: #fff;
+}
+
+.bg-light{
+    background: rgba(237, 214, 179, 0.909);
+    color: black;
+}
+
+.bg-dark{
+    background: var(--dark);
+    color: black;
+}
+
+.bg-black{
+    background: #dcdadb;
+    color: #000;
+}
+
+.bg-white{
+    background: white;
+    color: #000;
+}
+
+/* card */
+.card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
 }
