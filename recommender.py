@@ -1,3 +1,7 @@
+# Download the dataset from https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db?resource=download
+# Change the following path to the path of the csv file you just downloaded
+
+
 import sqlite3
 import pandas as pd
 import numpy as np
@@ -10,9 +14,6 @@ from sklearn.manifold import TSNE
 
 import warnings
 warnings.filterwarnings('ignore')
-
-# Download the dataset from https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db?resource=download
-# Change the following path to the path of the csv file you just downloaded
 
 tracks = pd.read_csv(r"C:\Users\Tanu\Downloads\SpotifyFeatures.csv\SpotifyFeatures.csv")
 # print(tracks.head())
